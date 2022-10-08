@@ -1,0 +1,351 @@
+/* ********** Customs Properties  ********** */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&family=Roboto:wght@300;400;700&family=Rubik:wght@300;600&display=swap');
+
+:root {
+   --color-white: rgb(234, 243, 202);
+   --background-box-name: ##2A265F;
+   --background-form: #1d2333;
+   --background-form1: #b9c85c;
+   --color-placeholder: #898741;
+}
+
+
+/* ********** Resets  ********** */
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+}
+
+ul {
+   text-decoration: none;
+   list-style: none;
+}
+
+/* ********** Utilities  ********** */
+
+.flex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* ********** Styles  ********** */
+.all-cards{
+   flex-wrap: wrap;
+   gap: 8rem;
+}
+.CrudUsers {
+   width: 100%;
+   min-height: 100vh;
+   background: url("assets/img/icons/fondoespacio.jpg");
+   background-size: cover;
+   flex-direction: column;
+   justify-content: flex-start;
+   position: relative;
+   z-index: 1;
+}
+
+
+/**********************  icon new user **************************************/
+
+.form-container{
+   position: absolute;
+}
+
+.box-form {
+   flex-direction: column;
+   width: 100%;
+   min-height: 100vh;
+   position: absolute;
+   z-index: 2;
+   background-color: rgb(0 0 0 / 0.92);
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   justify-content: flex-start;
+   padding-top: 5rem;
+}
+
+.closeBtn{
+   background-color: var(--background-form);
+   position: absolute;
+   width: 4rem;
+   height: 4rem;
+   top: 1rem;
+   right: 1rem;
+   z-index: 10;
+   font-size: 4rem;
+}
+
+.bx-x{
+   color: var(--color-white);
+}
+
+.icon-form{
+   margin-top: 4rem;
+   width: 100%;
+   height: 8rem;
+}
+
+
+
+.icon-form__img{
+   width: 8rem;
+   height: 8rem;
+   background-color: rgb(26, 194, 102);
+   border-radius: 1rem;
+   cursor: pointer;
+}
+.icon-form__img:hover {
+   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
+   background-image: linear-gradient(163deg, #6500e8 0%, #dd3f0a 100%); 
+   }
+/************************  Form  ***********************************/
+
+.new-form{
+   width: 30rem;
+   position: fixed;
+}
+
+
+.form {
+   /* display: none; */
+   background-color: var(--background-form);
+   border-radius: 20px;
+   box-sizing: border-box;
+   height: 60rem;
+   padding: 20px;
+   width: 100%;
+   
+}
+.form:hover {
+   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
+   background-image: linear-gradient(163deg, #6500e8 0%, #dd3f0a 100%); 
+   }
+
+.form__title {
+   color: var(--color-white);
+   font-size: 2.6rem;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+
+.form__input-container {
+   height: 5rem;
+   position: relative;
+   width: 100%;
+}
+
+
+.ic1 {
+   margin-top: 4rem;
+}
+
+.ic2 {
+   margin-top: 3rem;
+}
+
+.form__input {
+   background-color: #45303f;
+   border-radius: 1.2rem;
+   border: 0;
+   color: var(--color-white);
+   font-size: 1.8rem;
+   height: 100%;
+   outline: 0;
+   padding: .4rem 2rem 0;
+   width: 100%;
+}
+
+.form__cut {
+   background-color: var(--background-form1);
+   border-radius: 1rem;
+   height: 2rem;
+   width: 7.6rem;
+   left: 2rem;
+   position: absolute;
+   top: -2rem;
+   transform: translateY(0);
+   transition: transform 200ms;
+}
+
+.form__cut--short {
+   width: 5rem;
+}
+
+
+.form__input:focus~.form__cut,
+.form__input:not(:placeholder-shown)~.cut {
+   transform: translateY(8px);
+}
+
+.form__placeholder {
+   color: #e2ee05;
+   position: absolute;
+   left: 2rem;
+   top: 2rem;
+   line-height: 1.4px;
+   pointer-events: none;
+   transform-origin: 0 50%;
+   transition: transform 200ms, color 200ms;
+}
+
+.form__input:focus~.form__placeholder,
+.form__input:not(:placeholder-shown)~.form__placeholder {
+   transform: translateY(-3rem) translateX(1rem) scale(0.75);
+}
+
+.form__input:not(:placeholder-shown)~.form__placeholder {
+   color: #808097;
+}
+
+.form__input:focus~.form__placeholder {
+   color: #dc692f;
+}
+
+.form__submit:hover {
+   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
+   transition: transform 200ms;
+   background-image: linear-gradient(163deg, #6500e8 0%, #ff008c 100%); 
+}
+
+.form__submit {
+   background-color: rgb(48, 0, 221);
+   border-radius: 12px;
+   border: 0;
+   box-sizing: border-box;
+   color: var(--color-white);
+   cursor: pointer;
+   font-size: 18px;
+   height: 50px;
+   margin-top: 38px;
+   text-align: center;
+   width: 100%;
+}
+
+.form__submit:active {
+
+   background-color: rgb(222, 74, 11);
+}
+
+/*************************  Cards  *****************************/
+
+.card-user {
+   margin-top: 3rem;
+   width: 30rem;
+   flex-direction: column;
+   border-radius: 1rem;
+   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+   background-color: var(--color-white);
+   overflow: hidden;
+   position: relative;
+   
+}
+
+.card-user:hover {
+   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
+}
+
+.card-user__settings {
+   width: 3rem;
+   height: 3rem;
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+}
+
+.card-user__menu {
+   display: none;
+   width: 15rem;
+   height: 4rem;
+   border-radius: .3rem;
+   overflow: hidden;
+   background-color: var(--color-white);
+   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+   position: absolute;
+   top: 0rem;
+   right: 3rem;
+
+}
+
+.card-user__settings:hover .card-user__menu {
+   display: flex;
+   gap: 2rem;
+}
+
+.card-user__ul {
+   width: 100%;
+   gap: 2rem;
+}
+
+.card-user__icon-li {
+   font-size: 3rem;
+   padding: 0 1rem;
+}
+
+.card-user__button {
+   border: none;
+   background-color: var(--color-white);
+   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+
+.card-user__button:active {
+   background-color: #c95a0f;
+}
+
+.card-user__icon-setting {
+   font-size: 3rem;
+   color: var(--color-white);
+   font-weight: 600;
+}
+
+
+.card-user__name-box {
+   width: 100%;
+   height: 15rem;
+   background-color: #4e7ec0;
+   color: var(--color-white);
+   padding-bottom: 3rem;
+   align-items: flex-end;
+}
+
+
+.card-user__name-box:hover {
+   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
+   background-image: linear-gradient(163deg, #6500e8 0%, #dd3f0a 100%); 
+}
+
+
+.card-user__inf {
+   width: 100%;
+   height: 15rem;
+   flex-direction: column;
+   gap: 1rem;
+   transform: scale(0.97);
+   border-radius: 15px;
+   
+
+}
+
+.card-user__p {
+   width: 100%;
+}
