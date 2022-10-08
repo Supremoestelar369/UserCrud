@@ -71,4 +71,4 @@ const CrudUsers = () => {
    )
 }
 
-export default CrudUser
+export default CrudUsers
