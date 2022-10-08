@@ -76,4 +76,4 @@ const Form = ({ getAllUsers, handleSubmit, register, reset, objUpdate, setObjUpd
    )
 }
 
-export default Form
+export default For
