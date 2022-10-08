@@ -14,4 +14,4 @@ const useUpdate = ( id, data, getAllUsers, click) => {
         .catch(err => console.log(err))
 }
 
-export default useUpdat
+export default useUpdate
