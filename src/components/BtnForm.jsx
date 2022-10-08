@@ -31,4 +31,4 @@ const BtnForm = ({ getAllUsers, handleSubmit, register, reset, objUpdate, setObj
     )
 }
 
-export default BtnFor
+export default BtnForm
