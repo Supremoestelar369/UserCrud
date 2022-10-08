@@ -17,4 +17,4 @@ const useCreateCard = (data, getAllUsers) => {
         .catch(err => console.log(err))
 }
 
-export default useCreateCar
+export default useCreateCard
