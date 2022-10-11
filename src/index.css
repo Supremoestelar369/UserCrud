@@ -4,7 +4,7 @@
 :root {
    --color-white: rgb(234, 243, 202);
    --background-box-name: ##2A265F;
-   --background-form: #1d2333;
+   --background-form: #416ad8;
    --background-form1: #b9c85c;
    --color-placeholder: #898741;
 }
@@ -137,8 +137,8 @@ ul {
    
 }
 .form:hover {
-   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
-   background-image: linear-gradient(163deg, #6500e8 0%, #dd3f0a 100%); 
+   box-shadow: 0px 0px 30px 1px rgb(245, 230, 216)
+
    }
 
 .form__title {
@@ -224,7 +224,7 @@ ul {
 .form__submit:hover {
    box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
    transition: transform 200ms;
-   background-image: linear-gradient(163deg, #6500e8 0%, #ff008c 100%); 
+   
 }
 
 .form__submit {
@@ -243,7 +243,7 @@ ul {
 
 .form__submit:active {
 
-   background-color: rgb(222, 74, 11);
+   background-color: rgb(222, 11, 208);
 }
 
 /*************************  Cards  *****************************/
@@ -331,7 +331,7 @@ ul {
 
 .card-user__name-box:hover {
    box-shadow: 0px 0px 30px 1px rgb(245, 230, 216);
-   background-image: linear-gradient(163deg, #6500e8 0%, #dd3f0a 100%); 
+   
 }
 
 
